@@ -1,6 +1,6 @@
 # Foundational AI & Robotics Curriculum
 
-![Project Banner](./assets/banner.jpeg) <!-- Optional: Create a banner in assets/banner.png for a professional look -->
+![banner](https://github.com/user-attachments/assets/4a51153a-68d3-4b67-9416-397c375b4d02)
 
 Welcome! This repository is an open-source curriculum designed to teach the foundational, practical skills required for a career in Artificial Intelligence and Robotics.
 
