@@ -88,7 +88,7 @@ My goal with this curriculum is to share the knowledge I've gained on my journey
 If you find this content valuable, let's connect! Building a network is one of the most rewarding parts of a career in tech.
 
 -   **LinkedIn:** [linkedin.com/in/christiantsoungui](https://www.linkedin.com/in/christiantsoungui/)
--   **Twitter:** [@chrisTs](https://twitter.com/chrisTs)
+-   **Twitter:** [@TsounguiChris](https://twitter.com/TsounguiChris)
 
 And if you like this repository and its mission, please give it a ⭐ to show your support and help it reach more people!
 
