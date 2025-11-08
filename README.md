@@ -100,4 +100,4 @@ And if you like this repository and its mission, please give it a ⭐ to show yo
 
 ## 📄 License
 
-The work presented in this repository is for education purposes only. The code in this repository is released under the [Apache 2.0 License](LICENSE). Feel free to use and adapt it for your own projects and learning.
+The work presented in this repository is for educational purposes only. The code is released under the [Apache 2.0 License](LICENSE). Feel free to use and adapt it for your own projects and learning.
