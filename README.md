@@ -21,7 +21,7 @@ This repository is organized into two main pillars: Machine Learning and Robotic
 | # | Topic | 🔗 Notebook & Cheatsheet | 🔗 Original LinkedIn Post |
 | :--- | :--- | :--- | :--- |
 | **01** | The ML Project Roadmap | [`/1-Machine-Learning/01-ML-Cheatsheet-Roadmap/`](./1-Machine-Learning/01-ML-Cheatsheet-Roadmap/) | [Link to your post] |
-| **02** | Deep Dive: Intro to Classification | `(Coming Soon)` | `(Coming Soon)` |
+| **02** | Deep Dive: Intro to Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Classification-Intro/`](./1-Machine-Learning/01-ML-Cheatsheet-Classification-Intro/) | `(Coming Soon)` |
 | ... | ... | ... | ... |
 
 ### Pillar 2: Robotics, Vision & Control
