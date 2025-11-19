@@ -20,8 +20,9 @@ This repository is organized into two main pillars: Machine Learning and Robotic
 
 | # | Topic | 🔗 Notebook & Cheatsheet | 🔗 Original LinkedIn Post |
 | :--- | :--- | :--- | :--- |
-| **01** | The ML Project Roadmap | [`/1-Machine-Learning/01-ML-Cheatsheet-Roadmap/`](./1-Machine-Learning/01-ML-Cheatsheet-Roadmap/) | [Link to your post] |
-| **02** | Deep Dive: Intro to Classification | `(Coming Soon)` | `(Coming Soon)` |
+| **01** | The ML Project Roadmap: Regression | [`/1-Machine-Learning/01-ML-Cheatsheet-Roadmap/`](./1-Machine-Learning/01-ML-Cheatsheet-Roadmap/) | [Link to your post] |
+| **02** | Binary Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Binary-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Binary-Classification/) | `(Coming Soon)` |
+| **03** | Multiclass-multilabel-multioutput Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Multiclass-multilabel-multioutput-Classification/`](./1-Machine-Learning/03-ML-Cheatsheet-Multiclass-multilabel-multioutput-Classification/) | `(Coming Soon)` |
 | ... | ... | ... | ... |
 
 ### Pillar 2: Robotics, Vision & Control
@@ -100,4 +101,4 @@ And if you like this repository and its mission, please give it a ⭐ to show yo
 
 ## 📄 License
 
-The work presented in this repository is for education purposes only. The code in this repository is released under the [Apache 2.0 License](LICENSE). Feel free to use and adapt it for your own projects and learning.
+The work presented in this repository is for educational purposes only. The code is released under the [Apache 2.0 License](LICENSE). Feel free to use and adapt it for your own projects and learning.
