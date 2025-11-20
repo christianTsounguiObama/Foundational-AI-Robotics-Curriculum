@@ -56,7 +56,7 @@ To run these notebooks on your own machine, please follow these steps.
 2.  **Navigate to a project folder:**
     Each numbered folder is a self-contained project.
     ```bash
-    cd 1-Machine-Learning/01-ML-Cheatsheet-Roadmap
+    cd 1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression
     ```
 
 3.  **Create and activate a virtual environment:**
@@ -73,14 +73,14 @@ To run these notebooks on your own machine, please follow these steps.
 
 5.  **Launch Jupyter Notebook:**
     ```bash
-    jupyter notebook ./EN/notebook-EN.ipynb
+    jupyter notebook ./EN/notebook_EN.ipynb
     ```
 
 ---
 
 ## 👨‍💻 About the Author
 
-My name is **Dr. Christian Tsoungui Obama**, and I am a Machine Learning & Robotics Engineer. I am passionate about making complex technical concepts accessible and building practical, high-impact AI solutions.
+My name is **Dr. Christian Tsoungui Obama**, and I am an expert in mathematical modeling and data science with a Master's degree in Electromechanical Engineering. I am passionate about making complex technical concepts accessible and building practical, high-impact tech solutions.
 
 My goal with this curriculum is to share the knowledge I've gained on my journey and to help build a strong community of learners and practitioners who will create the next generation of technology.
 
