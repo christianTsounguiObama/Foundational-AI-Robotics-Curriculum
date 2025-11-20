@@ -20,8 +20,8 @@ This repository is organized into two main pillars: Machine Learning and Robotic
 
 | # | Topic | 🔗 Notebook & Cheatsheet | 🔗 Original LinkedIn Post |
 | :--- | :--- | :--- | :--- |
-| **01** | The ML Project Roadmap: Regression | [`/1-Machine-Learning/01-ML-Cheatsheet-Roadmap/`](./1-Machine-Learning/01-ML-Cheatsheet-Roadmap/) | [Link to your post] |
-| **02** | Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Classification/) | `(Coming Soon)` |
+| **01** | The ML Project Roadmap: Regression | [`/1-Machine-Learning/01-ML-Cheatsheet-Roadmap-Regression/`](./1-Machine-Learning/01-ML-Cheatsheet-Roadmap-Regression/) | [Link to your post] |
+| **02** | Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/) | `(Coming Soon)` |
 | **03** | Deep dive: Regression algorithms | `(Coming Soon)` | `(Coming Soon)` |
 | ... | ... | ... | ... |
 
