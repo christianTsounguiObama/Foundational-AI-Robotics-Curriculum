@@ -21,7 +21,7 @@ This repository is organized into two main pillars: Machine Learning and Robotic
 | # | Topic | 🔗 Notebook & Cheatsheet | 🔗 Original LinkedIn Post |
 | :--- | :--- | :--- | :--- |
 | **01** | The ML Project Roadmap: Regression | [`1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/`](./1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_ml-cheat-sheet-1-activity-7398373282556571648-KqYl?utm_source=share&utm_medium=member_desktop&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) |
-| **02** | The ML Project Roadmap: Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/) | `(Coming Soon)` |
+| **02** | The ML Project Roadmap: Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_cheat-sheet-ml-roadmap-classification-activity-7403025733821935616-bhq-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) | 
 | **04** | Deep dive: Linear regression algorithms | `(Coming Soon)` | `(Coming Soon)` |
 | ... | ... | ... | ... |
 <!--| **03** | Deep dive: Regression algorithms | `(Coming Soon)` | `(Coming Soon)` |-->
