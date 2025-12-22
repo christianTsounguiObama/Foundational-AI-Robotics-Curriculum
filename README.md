@@ -23,7 +23,7 @@ Before we can build intelligent robots, we must master the algorithms that drive
 | :--- | :--- | :--- | :--- |
 | **01** | **The ML Project Roadmap: Regression** | [`1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/`](./1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_ml-cheat-sheet-1-activity-7398373282556571648-KqYl?utm_source=share&utm_medium=member_desktop&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) |
 | **02** | **The ML Project Roadmap: Classification** | [`/1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_cheat-sheet-ml-roadmap-classification-activity-7403025733821935616-bhq-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) | 
-| **03** | **Deep Dive: Mastering Linear Regression** | [`/1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/`](./1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/) | `(Coming Soon)` |
+| **03** | **Deep Dive: Mastering Linear Regression** | [`/1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/`](./1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_cheat-sheet-ml-deep-dive-mastering-regression-activity-7408544420226170880-Bvgy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) |
 
 ---
 
