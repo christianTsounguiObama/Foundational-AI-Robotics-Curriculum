@@ -1,50 +1,62 @@
-# Foundational AI & Robotics Curriculum
+![ROS 2](https://img.shields.io/badge/ROS2-Humble%20%7C%20Jazzy-22314E?style=for-the-badge&logo=ros&logoColor=white)
+![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-FF6D00?style=for-the-badge&logo=gazebo&logoColor=white)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-RealTime-blue?style=for-the-badge&logo=freertos&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
-![banner](https://github.com/user-attachments/assets/4a51153a-68d3-4b67-9416-397c375b4d02)
+> *"A brain without a body is a hallucination."*
 
-Welcome! This repository is an open-source curriculum designed to teach the foundational, practical skills required for a career in Artificial Intelligence and Robotics.
+Welcome! This repository is an open-source engineering log designed to teach the full stack of **Industrial AI**: from the mathematical foundations of Machine Learning to the deployment of intelligent agents on physical robots.
 
-My mission is to create and share a clear, accessible, and high-quality series of learning modules. Each module consists of:
-*   A **visual cheatsheet** (in English & French) summarizing a core concept.
-*   A detailed **Jupyter Notebook** (in English & French) that puts the theory into practice on a real dataset.
-
-This project is for aspiring data scientists, engineers, and anyone looking to build the skills that will power the next generation of technology, with a special focus on empowering the African tech ecosystem.
+My mission is to bridge the gap between pure ML theory (inspired by *Aurélien Géron*) and practical robotics control (inspired by *Peter Corke*).
 
 ---
 
-## 📚 The Curriculum
+## 📚 Pillar 1: Machine Learning Foundations ("The Brain")
 
-This repository is organized into two main pillars: Machine Learning and Robotics. Below is the table of contents for all available learning modules.
-
-### Pillar 1: Machine Learning
+Before we can build intelligent robots, we must master the algorithms that drive them. These modules focus on the mathematical and theoretical underpinnings of AI.
 
 | # | Topic | 🔗 Notebook & Cheatsheet | 🔗 Original LinkedIn Post |
 | :--- | :--- | :--- | :--- |
-| **01** | The ML Project Roadmap: Regression | [`1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/`](./1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_ml-cheat-sheet-1-activity-7398373282556571648-KqYl?utm_source=share&utm_medium=member_desktop&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) |
-| **02** | The ML Project Roadmap: Classification | [`/1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_cheat-sheet-ml-roadmap-classification-activity-7403025733821935616-bhq-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) | 
-| **03** | Deep dive: Mastering Linear Regression | [`/1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/`](./1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/) | `(Coming Soon)` |
-| ... | ... | ... | ... |
-<!--| **03** | Deep dive: Regression algorithms | `(Coming Soon)` | `(Coming Soon)` |-->
+| **01** | **The ML Project Roadmap: Regression** | [`1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/`](./1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_ml-cheat-sheet-1-activity-7398373282556571648-KqYl?utm_source=share&utm_medium=member_desktop&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) |
+| **02** | **The ML Project Roadmap: Classification** | [`/1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/`](./1-Machine-Learning/02-ML-Cheatsheet-Roadmap-Classification/) | [`View linkedIn post`](https://www.linkedin.com/posts/christiantsoungui_cheat-sheet-ml-roadmap-classification-activity-7403025733821935616-bhq-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACIGZ5gBH4kEhyxvC7B6oPUFpa6SuDySW00) | 
+| **03** | **Deep Dive: Mastering Linear Regression** | [`/1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/`](./1-Machine-Learning/03-ML-Cheatsheet-DeepDive-MasteringRegression/) | `(Coming Soon)` |
 
-### Pillar 2: Robotics, Vision & Control
-*(Content for this pillar will be developed after the completion of the core ML curriculum)*
+---
 
-| # | Topic | 🔗 Notebook & Cheatsheet | 🔗 Original LinkedIn Post |
+## 🤖 Pillar 2: The AYILI Robotics Project ("The Body")
+
+This section documents the **Sim-to-Real** engineering process of building the **AYILI Mark 1**—an Industrial AI mobile robot.
+
+We apply the theory from Pillar 1 to real-world hardware. For example, *Linear Regression* (ML Module 03) is used here to calibrate the robot's motor controllers.
+
+### The Hardware Platform: AYILI Mark 1
+*   **Design Philosophy:** **DfAM (Design for Additive Manufacturing).** A 3D-printed Monocoque (Unibody) chassis with internal structural ribbing, mimicking industrial AGVs.
+*   **Embedded Architecture:** **FreeRTOS on ESP32.** We reject the standard Arduino loop in favor of real-time multitasking (Core 1 for Control, Core 0 for Comms).
+*   **Core Specs:** Raspberry Pi 5, 12V DC Gearmotors (Hall Encoders), Lidar, and 3S Li-Ion Power.
+
+### The Engineering Roadmap
+The curriculum follows a "Seasons" format, moving from basic control to advanced autonomy.
+
+#### Season 1: The Mobile Base
+*Goal: Build a robot that moves precisely and perceives its environment.*
+
+| # | Phase | The Engineering Challenge | Tech Stack |
 | :--- | :--- | :--- | :--- |
-| **01** | Introduction to Robot Kinematics | `(Coming Soon)` | `(Coming Soon)` |
-| ... | ... | ... | ... |
+| **04** | **Mechatronics** | **Design for AI.** Designing the Monocoque chassis in Fusion 360 and managing the Power Budget. | *Fusion 360, FDM Printing* |
+| **05** | **Control** | **Hardware Calibration.** Using Linear Regression to map PWM signals to RPM. Implementing the PID loop in **FreeRTOS**. | *C++, ESP32, Micro-ROS* |
+| **06** | **Perception** | **The Safety Stop.** Training a CNN on the Edge to classify "Floor" vs. "Obstacle" in real-time. | *PyTorch, TensorFlow Lite* |
+| **07** | **Vision** | **Object Tracking.** Implementing Visual Servoing (PID) to track dynamic objects with YOLOv8. | *YOLO, OpenCV* |
+| **08** | **Kinematics** | **State Estimation.** Using RNNs (Recurrent Neural Networks) to correct odometry drift. | *ROS 2 TF2, RNNs* |
+| **09** | **Intelligence** | **Voice Control (VLA).** A Vision-Language-Action pipeline using local LLMs to parse voice commands. | *Llama 3, Whisper* |
+| **10** | **Autonomy** | **Sim-to-Real (RL).** Training a PPO Agent in Gazebo to navigate complex spaces without a map. | *Gazebo, Stable Baselines3* |
 
 ---
 
 ## 🛠️ How to Use This Repository
 
-To run these notebooks on your own machine, please follow these steps.
-
 ### Prerequisites
-
--   Python 3.8+
--   Git
--   An environment manager like `venv` (recommended) or `conda`.
+-   **For ML (Pillar 1):** Python 3.8+, Jupyter Notebook.
+-   **For Robotics (Pillar 2):** Ubuntu 22.04/24.04, ROS 2 (Humble/Jazzy), Gazebo Harmonic.
 
 ### Installation
 
@@ -60,46 +72,27 @@ To run these notebooks on your own machine, please follow these steps.
     cd 1-Machine-learning/01-ML-Cheatsheet-Roadmap-Regression
     ```
 
-3.  **Create and activate a virtual environment:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-4.  **Install the required libraries:**
-    Each project has its own `requirements.txt` file.
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5.  **Launch Jupyter Notebook:**
-    ```bash
-    jupyter notebook ./EN/notebook_EN.ipynb
-    ```
+3.  **Set up the Environment:**
+    *   *For ML Projects:* Create a standard Python venv and install `requirements.txt`.
+    *   *For Robotics Projects:* Source your ROS 2 workspace (detailed instructions provided inside each robotics folder).
 
 ---
 
 ## 👨‍💻 About the Author
 
-My name is **Dr. Christian Tsoungui Obama**, and I am an expert in mathematical modeling and data science with a Master's degree in Electromechanical Engineering. I am passionate about making complex technical concepts accessible and building practical, high-impact tech solutions.
+My name is **Dr. Christian Tsoungui Obama**. I am an **Industrial AI Engineer** with a background in mathematical modeling and electromechanical engineering.
 
-My goal with this curriculum is to share the knowledge I've gained on my journey and to help build a strong community of learners and practitioners who will create the next generation of technology.
+I am passionate about empowering the next generation of engineers—especially within the African tech ecosystem—by making complex, industrial-grade concepts accessible and practical.
 
 ## 🤝 Let's Connect
 
-If you find this content valuable, let's connect! Building a network is one of the most rewarding parts of a career in tech.
+If you find this content valuable, let's connect!
 
 -   **LinkedIn:** [linkedin.com/in/christiantsoungui](https://www.linkedin.com/in/christiantsoungui/)
 -   **Twitter:** [@TsounguiChris](https://twitter.com/TsounguiChris)
 
-And if you like this repository and its mission, please give it a ⭐ to show your support and help it reach more people!
-
-## 🙏 Acknowledgements
-
--   The initial Machine Learning pillar is heavily inspired by the foundational and practical teachings in **"Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow" by Aurélien Géron**. It is a must-read for any aspiring ML practitioner.
--   The future Robotics pillar will be inspired by **"Robotics, Vision and Control" by Peter Corke**.
--   All datasets used in this series are publicly available and will be credited within their respective notebooks.
+If you support this mission, please give the repo a ⭐!
 
 ## 📄 License
 
-The work presented in this repository is for educational purposes only. The code is released under the [Apache 2.0 License](LICENSE). Feel free to use and adapt it for your own projects and learning.
+The work presented in this repository is for educational purposes. The code is released under the [Apache 2.0 License](LICENSE).
