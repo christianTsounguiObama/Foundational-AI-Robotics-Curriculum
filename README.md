@@ -1,3 +1,7 @@
+# Foundational AI & Robotics Curriculum
+
+![banner](https://github.com/user-attachments/assets/4a51153a-68d3-4b67-9416-397c375b4d02)
+
 ![ROS 2](https://img.shields.io/badge/ROS2-Humble%20%7C%20Jazzy-22314E?style=for-the-badge&logo=ros&logoColor=white)
 ![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-FF6D00?style=for-the-badge&logo=gazebo&logoColor=white)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-RealTime-blue?style=for-the-badge&logo=freertos&logoColor=white)
