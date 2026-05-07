@@ -47,7 +47,7 @@ The curriculum follows a "Seasons" format, moving from basic control to advanced
 
 | # | Phase | The Engineering Challenge | Tech Stack |
 | :--- | :--- | :--- | :--- |
-| **01** | **Control** | **Motor Calibration & advanced speed control.** From basic PID control to Feedforward + PID using polynomial regression for system identification. | *C/C++, ATmega2560, Scikit-Learn* |
+| **01** | **Control** | **Motor Calibration & Advanced Speed Control.** From basic PID control to Feedforward + PID using polynomial regression for system identification. | *C/C++, ATmega2560, Scikit-Learn* |
 | --- | --- | --- | --- |
 
 ---
