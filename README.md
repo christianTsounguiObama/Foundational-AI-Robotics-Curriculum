@@ -82,7 +82,7 @@ The curriculum follows a "Seasons" format, moving from basic control to advanced
 
 My name is **Dr. Christian Tsoungui Obama**. I am an **Electromechanical Engineer** with a **PhD in Applied Mathematics** (modeling and data science focus).
 
-I am passionate about empowering the next generation of engineers—especially within the African tech ecosystem—by making complex, industrial-grade concepts accessible and practical.
+I am passionate about empowering the next generation of applied scientists and engineers — especially within the African tech ecosystem — by making complex, industrial-grade concepts accessible and practical.
 
 ## 🤝 Let's Connect
 
