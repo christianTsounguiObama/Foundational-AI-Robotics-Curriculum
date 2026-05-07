@@ -36,8 +36,8 @@ We apply the theory from Pillar 1 to real-world hardware. For example, *Linear R
 
 ### The Hardware Platform: AYILI Mark 1
 *   **Design Philosophy:** **DfAM (Design for Additive Manufacturing).** A 3D-printed Monocoque (Unibody) chassis with internal structural ribbing, mimicking industrial AGVs.
-*   **Embedded Architecture:** **FreeRTOS on ESP32.** We reject the standard Arduino loop in favor of real-time multitasking (Core 1 for Control, Core 0 for Comms).
-*   **Core Specs:** Raspberry Pi 5, 12V DC Gearmotors (Hall Encoders), Lidar, and 3S Li-Ion Power.
+*   **Embedded Architecture:** **Arduino Mega2560 & FreeRTOS on ESP32.** We use the standard Arduino for prototyping and the implement the project in real-time multitasking (Core 1 for Control, Core 0 for Comms).
+*   **Core Specs:** ESP32, Raspberry Pi 4b, DC Gearmotors (Hall Encoders), Lidar, and 3S Li-Ion Power.
 
 ### The Engineering Roadmap
 The curriculum follows a "Seasons" format, moving from basic control to advanced autonomy.
