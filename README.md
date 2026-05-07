@@ -80,7 +80,7 @@ The curriculum follows a "Seasons" format, moving from basic control to advanced
 
 ## 👨‍💻 About the Author
 
-My name is **Dr. Christian Tsoungui Obama**. I am an **Industrial AI Engineer** with a background in mathematical modeling and electromechanical engineering.
+My name is **Dr. Christian Tsoungui Obama**. I am an **Electromechanical Engineer** with a **PhD in Applied Mathematics** (modeling and data science focus).
 
 I am passionate about empowering the next generation of engineers—especially within the African tech ecosystem—by making complex, industrial-grade concepts accessible and practical.
 
