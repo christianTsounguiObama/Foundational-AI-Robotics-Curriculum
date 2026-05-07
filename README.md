@@ -30,11 +30,11 @@ Before we can build intelligent robots, we must master the algorithms that drive
 
 ## 🤖 Pillar 2: The AYILI Robotics Project ("The Body")
 
-This section documents the **Sim-to-Real** engineering process of building the **AYILI Mark 1**—an Industrial AI mobile robot.
+This section documents the **Sim-to-Real** engineering process of building a prototype of an Industrial AI mobile robot.
 
 We apply the theory from Pillar 1 to real-world hardware. For example, *Linear Regression* (ML Module 03) is used here to calibrate the robot's motor controllers.
 
-### The Hardware Platform: AYILI Mark 1
+### The Hardware Platform:
 *   **Design Philosophy:** **DfAM (Design for Additive Manufacturing).** A 3D-printed Monocoque (Unibody) chassis with internal structural ribbing, mimicking industrial AGVs.
 *   **Embedded Architecture:** **Arduino Mega2560 & FreeRTOS on ESP32.** We use the standard Arduino for prototyping and the implement the project in real-time multitasking (Core 1 for Control, Core 0 for Comms).
 *   **Core Specs:** ESP32, Raspberry Pi 4b, DC Gearmotors (Hall Encoders), Lidar, and 3S Li-Ion Power.
