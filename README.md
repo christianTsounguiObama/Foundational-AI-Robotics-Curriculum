@@ -47,13 +47,8 @@ The curriculum follows a "Seasons" format, moving from basic control to advanced
 
 | # | Phase | The Engineering Challenge | Tech Stack |
 | :--- | :--- | :--- | :--- |
-| **04** | **Mechatronics** | **Design for AI.** Designing the Monocoque chassis in Fusion 360 and managing the Power Budget. | *Fusion 360, FDM Printing* |
-| **05** | **Control** | **Hardware Calibration.** Using Linear Regression to map PWM signals to RPM. Implementing the PID loop in **FreeRTOS**. | *C++, ESP32, Micro-ROS* |
-| **06** | **Perception** | **The Safety Stop.** Training a CNN on the Edge to classify "Floor" vs. "Obstacle" in real-time. | *PyTorch, TensorFlow Lite* |
-| **07** | **Vision** | **Object Tracking.** Implementing Visual Servoing (PID) to track dynamic objects with YOLOv8. | *YOLO, OpenCV* |
-| **08** | **Kinematics** | **State Estimation.** Using RNNs (Recurrent Neural Networks) to correct odometry drift. | *ROS 2 TF2, RNNs* |
-| **09** | **Intelligence** | **Voice Control (VLA).** A Vision-Language-Action pipeline using local LLMs to parse voice commands. | *Llama 3, Whisper* |
-| **10** | **Autonomy** | **Sim-to-Real (RL).** Training a PPO Agent in Gazebo to navigate complex spaces without a map. | *Gazebo, Stable Baselines3* |
+| **01** | **Control** | **Motor Calibration & advanced speed control.** From basic PID control to Feedforward + PID using polynomial regression for system identification. | *C/C++, ATmega2560, Scikit-Learn* |
+| --- | --- | --- | --- |
 
 ---
 
