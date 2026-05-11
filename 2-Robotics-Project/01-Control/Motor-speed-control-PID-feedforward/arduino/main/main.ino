@@ -51,10 +51,6 @@ void loop() {
     duty_cycle++;
     analogWrite(enapin, duty_cycle);
     last_ramp_time = current_time;
-    
-    Serial.print("Duty: ");
-    Serial.print(duty_cycle);
-    Serial.print(" | ");
   }
 
   // ==================== SPEED CALCULATION ====================
@@ -72,9 +68,10 @@ void loop() {
 
     // Low-pass filter
     filtered_speed = alpha * speed_mps + (1.0 - alpha) * filtered_speed;
-
-    Serial.print("Speed: ");
-    Serial.println(filtered_speed, 3);
+    
+    Serial.print(duty_cycle);
+    Serial.print(",");
+    Serial.println(filtered_speed, 4);
   }
 }
 
