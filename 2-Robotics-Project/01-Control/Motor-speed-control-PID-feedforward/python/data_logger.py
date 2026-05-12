@@ -4,11 +4,12 @@ import time
 import os
 from datetime import datetime
 
-## Configuration de la connection Serial avec Arduino
+os.makedirs("../data", exist_ok=True)
 
+## Configuration de la connection Serial avec Arduino
 SERIAL_PORT = "/dev/ttyUSB0"
 BAUD_RATE = 115200
-CSV_FILENAME = f"vitesse_moteur_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+CSV_FILENAME = f"../data/vitesse_moteur_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
 
 print(f"Connection au port: {SERIAL_PORT}, à {BAUD_RATE} baud ...")
 print(f"Données sauvegardées dans: {CSV_FILENAME}")
