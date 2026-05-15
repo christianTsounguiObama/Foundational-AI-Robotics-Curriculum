@@ -1,4 +1,5 @@
 #include "feedforward_model3.h"
+#include <PID_v1.h>
 
 int enapin = 5;
 int motorpin1 = 6;
@@ -10,31 +11,53 @@ volatile int32_t tickcount = 0;
 int32_t last_tickcount = 0;
 
 unsigned long last_time = 0;
-const unsigned long sample_time = 200;    
+const unsigned long sample_time = 100;    
 
 unsigned long last_ramp_time = 0;
 const unsigned long ramp_interval = 2000;  
 
-int duty_cycle = 0;
+double duty_cycle = 0.0;
+double pid_output = 0.0;
+double ff_output = 0.0;
+double target_speed = 0.0;
+double abs_target_speed = 0.0;
+double filtered_speed = 0.0;
+double abs_filtered_speed = 0.0;
 
 float speed_rps = 0.0;
 float speed_mmps = 0.0;
-float filtered_speed = 0.0;
 
 const float gearppr = 11.0 * 48.0;
 const float alpha = 0.35;
 const float wheel_diam_mm = 67.35;
-float target_speed = 0.0;
 
-float getSinusoidalTargetSpeed(float t) {
+double Kp=300.0, Ki=500.0, Kd=40.0;
+PID myPID(&abs_filtered_speed, &pid_output, &abs_target_speed, Kp, Ki, Kd, DIRECT);
+
+// ====================== STEP SIGNAL ======================
+float getStepTargetSpeed(float t, const float step_value) {
+  const unsigned long step_delay = 1;   // 30 seconds at 0
+  t /= 1000.0;
+  
+  if (t < step_delay) {
+    return 0.0;
+  } else {
+    return step_value;
+  }
+}
+
+// ====================== SINUSOIDAL SIGNAL ======================
+float getSinusoidalTargetSpeed(float t, const float step_value) {
   const float period = 60.0;                // current time in seconds
 
   t /= 1000.0;
   float angle = (2.0 * PI * t) / period;
-  return 0.6 * sin(angle);                      // Amplitude = 0.6
+  return step_value * sin(angle);                      // Amplitude = 0.6
 }
 
 float controlFeedForward(float target_speed){
+  if (target_speed <= 0.01) return 0.0;
+  
   float result = ff_coeffs[0];
   float pow_x = target_speed;
 
@@ -42,7 +65,7 @@ float controlFeedForward(float target_speed){
     result += ff_coeffs[i] * pow_x;
     pow_x *= target_speed;
   }
-  int PWM_ff = constrain(round(result), 0, 255);
+  int PWM_ff = constrain(result, 0, 255);
   return PWM_ff;
 }
 
@@ -64,22 +87,30 @@ void setup() {
   pinMode(enapin, OUTPUT);
   pinMode(channelA, INPUT);
   pinMode(channelB, INPUT);
-
   
   attachInterrupt(digitalPinToInterrupt(channelB), tickcounter, RISING);
   
   last_time = millis();
   last_ramp_time = millis();
+
+  myPID.SetMode(AUTOMATIC);
+  myPID.SetOutputLimits(0, 255);
+  myPID.SetSampleTime(sample_time);
 }
 
 void loop() {
   unsigned long current_time = millis();
 
-  target_speed = getSinusoidalTargetSpeed(current_time);
+  target_speed = getSinusoidalTargetSpeed(current_time, 0.65);
+  //target_speed = getStepTargetSpeed(current_time, 0.65);
+  abs_target_speed = abs(target_speed);
   
   // Calcul du signal PWM
-  duty_cycle = controlFeedForward(abs(target_speed));
-  analogWrite(enapin, duty_cycle);
+  ff_output = controlFeedForward(abs_target_speed);
+  myPID.Compute();
+  duty_cycle = constrain(ff_output + pid_output, 0, 255);
+  
+  analogWrite(enapin, (int)duty_cycle);
   if(target_speed > 0){
     forward();
   }else if(target_speed < 0){
@@ -87,7 +118,7 @@ void loop() {
   }
   
 
-  // ==================== SPEED CALCULATION ====================
+  // ==================== CALCUL DE VITESSE ====================
   if (current_time - last_time >= sample_time) {
     int32_t delta_ticks = tickcount - last_tickcount;
     last_tickcount = tickcount;
@@ -100,8 +131,9 @@ void loop() {
     speed_mmps = PI * wheel_diam_mm * speed_rps;
     float speed_mps = speed_mmps / 1000.0;
 
-    // Low-pass filter
+    
     filtered_speed = alpha * speed_mps + (1.0 - alpha) * filtered_speed;
+    abs_filtered_speed = abs(filtered_speed);
    
     Serial.print(target_speed, 4);
     Serial.print(",");
